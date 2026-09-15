@@ -1,0 +1,25 @@
+feature,question,chi2,dof,p_value,cramers_v,effect,n,low_expected_cells,leaky,p_adjusted,significant
+work_interfere,"If you have a condition, does it interfere with your work?",594.92,4,1.944084172920949e-127,0.685,strong,1259,0.0,True,4.665802015010277e-126,True
+family_history,Do you have a family history of mental illness?,178.27,1,1.1584182294491328e-40,0.377,strong,1259,0.0,False,1.3901018753389594e-39,True
+care_options,Do you know the mental health care options your employer covers?,94.76,2,2.6509645800176187e-21,0.272,moderate,1259,0.0,False,2.120771664014095e-20,True
+support_band,Support band,77.77,2,1.2971145534951444e-17,0.245,moderate,1259,0.0,False,7.782687320970867e-17,True
+benefits,Does your employer provide mental health benefits?,64.84,2,8.326816588490713e-15,0.223,moderate,1259,0.0,False,3.9968719624755423e-14,True
+gender,Gender,53.42,2,2.517701282397253e-12,0.202,moderate,1259,0.0,False,1.0070805129589011e-11,True
+obs_consequence,Have you seen negative consequences for coworkers who were open?,30.14,1,4.020553287446151e-08,0.154,small,1259,0.0,False,1.37847541283868e-07,True
+leave,How easy is it to take medical leave for a mental health condition?,29.94,4,5.025795235445741e-06,0.144,small,1259,0.0,False,1.3402120627855308e-05,True
+anonymity,Is your anonymity protected if you use these resources?,26.42,2,1.8304549906790162e-06,0.139,small,1259,0.0,False,5.491364972037048e-06,True
+mental_health_consequence,Would discussing mental health with your employer have negative consequences?,22.33,2,1.4180505235573011e-05,0.127,small,1259,0.0,False,3.4033212565375225e-05,True
+mental_vs_physical,Does your employer take mental health as seriously as physical health?,17.46,2,0.00016181406137210283,0.111,small,1259,0.0,False,0.0003530488611754971,True
+region,Region,16.31,4,0.0026306517486156863,0.099,negligible,1259,0.0,False,0.00485658784359819,True
+mental_health_interview,Would you raise mental health with a potential employer in an interview?,12.69,2,0.0017553628170834984,0.092,negligible,1259,0.0,False,0.0035107256341669973,True
+wellness_program,Has your employer discussed mental health as part of wellness?,11.5,2,0.003186522932181415,0.087,negligible,1259,0.0,False,0.005462610740882425,True
+seek_help,Does your employer provide resources for seeking help?,10.93,2,0.004223416520618908,0.084,negligible,1259,0.0,False,0.006757466432990253,True
+coworkers,Would you discuss a mental health issue with your coworkers?,6.0,2,0.04975472196415934,0.056,negligible,1259,0.0,False,0.074632082946239,False
+no_employees,How many employees does your company have?,8.76,5,0.1188211080099688,0.055,negligible,1259,0.0,False,0.1677474466023089,False
+age_group,Age group,8.0,5,0.15610460799850256,0.049,negligible,1251,0.0,False,0.20813947733133675,False
+phys_health_interview,Would you raise physical health with a potential employer in an interview?,3.4,2,0.18271110789433143,0.033,negligible,1259,0.0,False,0.2307929783928397,False
+phys_health_consequence,Would discussing physical health with your employer have negative consequences?,3.37,2,0.18535549917522617,0.033,negligible,1259,0.0,False,0.2224265990102714,False
+tech_company,Is your employer primarily a tech company?,1.09,1,0.2958371878494479,0.014,negligible,1259,0.0,False,0.3380996432565119,False
+self_employed,Are you self-employed?,0.41,1,0.5227398427535908,0.0,negligible,1259,0.0,False,0.5227398427535908,False
+remote_work,Do you work remotely at least 50% of the time?,0.8,1,0.3712050125960662,0.0,negligible,1259,0.0,False,0.40495092283207224,False
+supervisor,Would you discuss a mental health issue with your supervisor?,1.73,2,0.4219984258920344,0.0,negligible,1259,0.0,False,0.44034618353951416,False

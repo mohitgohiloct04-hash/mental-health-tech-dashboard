@@ -1,0 +1,15 @@
+# Mental Health in Tech — analytics project
+#
+# Tested against the versions on the right. The lower bounds are the earliest
+# releases the code is known to work with; streamlit 1.49 introduced the
+# width="stretch" API, but dashboard/theme.py falls back automatically on
+# older installs.
+
+pandas>=2.0          # 2.3.3
+numpy>=1.24          # 2.3.4
+scipy>=1.10          # 1.16.2
+scikit-learn>=1.3    # 1.7.2
+plotly>=5.18         # 7.0.0
+streamlit>=1.36      # 1.63.0
+matplotlib>=3.7      # 3.10.7
+seaborn>=0.13        # 0.13.2

@@ -1,0 +1,72 @@
+{
+  "input_rows": 1259,
+  "input_columns": 27,
+  "steps": [
+    {
+      "step": "Parsed timestamps",
+      "detail": "Derived survey_date and survey_week for response-flow analysis.",
+      "rows_affected": 1259
+    },
+    {
+      "step": "Invalidated impossible ages",
+      "detail": "Ages outside 15-80 set to missing (joke and typo entries).",
+      "rows_affected": 8
+    },
+    {
+      "step": "Collapsed free-text gender",
+      "detail": "49 raw spellings mapped onto 3 analytic groups.",
+      "rows_affected": 1259
+    },
+    {
+      "step": "Scoped state to US respondents",
+      "detail": "Cleared US state values recorded against non-US countries.",
+      "rows_affected": 4
+    },
+    {
+      "step": "Imputed self_employed",
+      "detail": "18 blanks filled with 'No' (modal answer) and flagged in self_employed_imputed.",
+      "rows_affected": 18
+    },
+    {
+      "step": "Reinterpreted blank work_interfere",
+      "detail": "Blanks mean the respondent reported no condition; kept as an explicit level and captured in the has_condition flag.",
+      "rows_affected": 264
+    },
+    {
+      "step": "Derived comment features",
+      "detail": "1,095 of 1,259 left the free-text box empty; kept length and presence as features.",
+      "rows_affected": 164
+    },
+    {
+      "step": "Checked duplicates",
+      "detail": "4 duplicate response bodies found.",
+      "rows_affected": 4
+    }
+  ],
+  "invalid_age_values": [
+    -1726,
+    -29,
+    -1,
+    5,
+    8,
+    11,
+    329,
+    99999999999
+  ],
+  "output_rows": 1259,
+  "output_columns": 46,
+  "engineered_columns": [
+    "age_group",
+    "gender",
+    "region",
+    "has_condition",
+    "support_score",
+    "support_band",
+    "openness_score",
+    "stigma_score",
+    "parity_gap",
+    "leave_ease",
+    "company_size_rank",
+    "work_interfere_rank"
+  ]
+}
