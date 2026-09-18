@@ -310,14 +310,16 @@ def kpi(label: str, value: str, caption: str = "", accent: str = "teal",
     bg, fg = chip_colors.get(chip_tone, chip_colors["teal"])
     chip_html = (f'<div class="kpi-chip" style="background:{bg};color:{fg}">{chip}</div>'
                  if chip else "")
-    st.markdown(f"""
-    <div class="kpi" style="border-left-color:{C.COLORS[accent]}">
-        <span class="kpi-label">{label}</span>
-        <span class="kpi-value">{value}<span class="kpi-unit">{unit}</span></span>
-        {chip_html}
-        <div class="kpi-caption">{caption}</div>
-    </div>
-    """, unsafe_allow_html=True)
+    # Built as one unbroken line on purpose: a raw HTML block passed to st.markdown
+    # ends at the first blank line, and an empty chip_html here used to leave one —
+    # which made Streamlit fall back to rendering the rest as a markdown code block.
+    html = (f'<div class="kpi" style="border-left-color:{C.COLORS[accent]}">'
+           f'<span class="kpi-label">{label}</span>'
+           f'<span class="kpi-value">{value}<span class="kpi-unit">{unit}</span></span>'
+           f'{chip_html}'
+           f'<div class="kpi-caption">{caption}</div>'
+           f'</div>')
+    st.markdown(html, unsafe_allow_html=True)
 
 
 def insight(body: str, title: str = "What this shows", tone: str = "") -> None:
